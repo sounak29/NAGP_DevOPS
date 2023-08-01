@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Sequential Testing Suite">
+	<listeners>
+		<listener class-name="com.magento.extentreport.Listeners" />
+	</listeners>
+	<test name="Sequential Testing">
+		<classes>
+			<class name="com.magento.test.GearTest" />
+			<class name="com.magento.test.HomeTest" />
+			<class name="com.magento.test.SaleTest" />
+			<class name="com.magento.test.SearchTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
