@@ -1,339 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="173.28" tests="10" errors="0" skipped="0" failures="0">
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="10" failures="0" name="TestSuite" time="43.226" errors="0" skipped="0">
   <properties>
-    <property name="java.specification.version" value="17"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="D:\NAGP\eclips\seleniumAutomation\target\test-classes;D:\NAGP\eclips\seleniumAutomation\target\classes;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-java\4.8.3\selenium-java-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-api\4.8.3\selenium-api-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.8.3\selenium-chrome-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\sounakroy\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\sounakroy\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\sounakroy\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\sounakroy\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sounakroy\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sounakroy\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sounakroy\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\sounakroy\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\sounakroy\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.8.3\selenium-chromium-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-json\4.8.3\selenium-json-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.8.3\selenium-manager-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v109\4.8.3\selenium-devtools-v109-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.8.3\selenium-devtools-v110-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.8.3\selenium-devtools-v111-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.8.3\selenium-devtools-v85-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.8.3\selenium-edge-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.8.3\selenium-firefox-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-http\4.8.3\selenium-http-4.8.3.jar;C:\Users\sounakroy\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.8.3\selenium-ie-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.8.3\selenium-remote-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-buffer\4.1.90.Final\netty-buffer-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-codec-http\4.1.90.Final\netty-codec-http-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-codec\4.1.90.Final\netty-codec-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-handler\4.1.90.Final\netty-handler-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-common\4.1.90.Final\netty-common-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.90.Final\netty-transport-classes-epoll-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.90.Final\netty-transport-classes-kqueue-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-epoll\4.1.90.Final\netty-transport-native-epoll-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.90.Final\netty-transport-native-kqueue-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.90.Final\netty-transport-native-unix-common-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport\4.1.90.Final\netty-transport-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-resolver\4.1.90.Final\netty-resolver-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-api\1.24.0\opentelemetry-api-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-context\1.24.0\opentelemetry-context-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.24.0\opentelemetry-exporter-logging-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.24.0\opentelemetry-sdk-metrics-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.24.0-alpha\opentelemetry-sdk-logs-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.24.0-alpha\opentelemetry-api-logs-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.24.0-alpha\opentelemetry-api-events-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.24.0\opentelemetry-sdk-common-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.24.0\opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.24.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.24.0\opentelemetry-sdk-trace-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.24.0\opentelemetry-sdk-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.24.0-alpha\opentelemetry-semconv-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\sounakroy\.m2\repository\net\bytebuddy\byte-buddy\1.14.2\byte-buddy-1.14.2.jar;C:\Users\sounakroy\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\sounakroy\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\sounakroy\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\sounakroy\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\sounakroy\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\sounakroy\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.8.3\selenium-safari-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-support\4.8.3\selenium-support-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\sounakroy\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\sounakroy\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\sounakroy\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\sounakroy\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\sounakroy\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sounakroy\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\sounakroy\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\sounakroy\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\sounakroy\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\sounakroy\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\sounakroy\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="user.variant" value=""/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
-    <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="java.vm.specification.version" value="17"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="IN"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\sounakroy\AppData\Local\Temp\surefire1787463610348647712\surefirebooter-20230802101847747_3.jar C:\Users\sounakroy\AppData\Local\Temp\surefire1787463610348647712 2023-08-02T10-18-46_671-jvmRun1 surefire-20230802101847747_1tmp surefire_0-20230802101847747_2tmp"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\NAGP\eclips\seleniumAutomation"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\NAGP\eclips\seleniumAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\SOUNAK~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Java\jdk-17;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Users\sounakroy\AppData\Local\Android\Sdk\platform-tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools\bin;C:\oracle\ODAC112021_x64\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\sounakroy\AppData\Roaming\npm\node_modules;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Users\sounakroy\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\sounakroy\AppData\Local\Programs\Python\Python310\;C:\Users\sounakroy\AppData\Local\Microsoft\WindowsApps;C:\Users\sounakroy\.dotnet\tools;C:\Users\sounakroy\AppData\Roaming\npm;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.302-1\bin;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.4/conf"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="D:\NAGP\eclips\seleniumAutomation\target\test-classes;D:\NAGP\eclips\seleniumAutomation\target\classes;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-java\4.8.3\selenium-java-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-api\4.8.3\selenium-api-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.8.3\selenium-chrome-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\sounakroy\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\sounakroy\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\sounakroy\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\sounakroy\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\sounakroy\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\sounakroy\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\sounakroy\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\sounakroy\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\sounakroy\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.8.3\selenium-chromium-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-json\4.8.3\selenium-json-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.8.3\selenium-manager-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v109\4.8.3\selenium-devtools-v109-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v110\4.8.3\selenium-devtools-v110-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v111\4.8.3\selenium-devtools-v111-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.8.3\selenium-devtools-v85-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.8.3\selenium-edge-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.8.3\selenium-firefox-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-http\4.8.3\selenium-http-4.8.3.jar;C:\Users\sounakroy\.m2\repository\dev\failsafe\failsafe\3.3.1\failsafe-3.3.1.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.8.3\selenium-ie-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.8.3\selenium-remote-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-buffer\4.1.90.Final\netty-buffer-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-codec-http\4.1.90.Final\netty-codec-http-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-codec\4.1.90.Final\netty-codec-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-handler\4.1.90.Final\netty-handler-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-common\4.1.90.Final\netty-common-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.90.Final\netty-transport-classes-epoll-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.90.Final\netty-transport-classes-kqueue-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-epoll\4.1.90.Final\netty-transport-native-epoll-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.90.Final\netty-transport-native-kqueue-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.90.Final\netty-transport-native-unix-common-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport\4.1.90.Final\netty-transport-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-resolver\4.1.90.Final\netty-resolver-4.1.90.Final.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-api\1.24.0\opentelemetry-api-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-context\1.24.0\opentelemetry-context-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.24.0\opentelemetry-exporter-logging-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.24.0\opentelemetry-sdk-metrics-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.24.0-alpha\opentelemetry-sdk-logs-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-api-logs\1.24.0-alpha\opentelemetry-api-logs-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.24.0-alpha\opentelemetry-api-events-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.24.0\opentelemetry-sdk-common-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.24.0\opentelemetry-sdk-extension-autoconfigure-spi-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.24.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.24.0\opentelemetry-sdk-trace-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.24.0\opentelemetry-sdk-1.24.0.jar;C:\Users\sounakroy\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.24.0-alpha\opentelemetry-semconv-1.24.0-alpha.jar;C:\Users\sounakroy\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\sounakroy\.m2\repository\net\bytebuddy\byte-buddy\1.14.2\byte-buddy-1.14.2.jar;C:\Users\sounakroy\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\sounakroy\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\sounakroy\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\sounakroy\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\sounakroy\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\sounakroy\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\sounakroy\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.8.3\selenium-safari-driver-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\seleniumhq\selenium\selenium-support\4.8.3\selenium-support-4.8.3.jar;C:\Users\sounakroy\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\sounakroy\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\sounakroy\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\sounakroy\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\sounakroy\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\sounakroy\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\sounakroy\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\sounakroy\.m2\repository\org\projectlombok\lombok\1.18.12\lombok-1.18.12.jar;C:\Users\sounakroy\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\sounakroy\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\sounakroy\.m2\repository\org\apache\logging\log4j\log4j-core\2.20.0\log4j-core-2.20.0.jar;C:\Users\sounakroy\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;"/>
-    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\apache-maven-3.8.4\lib\jansi-native"/>
     <property name="user.home" value="C:\Users\sounakroy"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="sounakroy"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.4\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2023-07-18"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
-    <property name="file.separator" value="\"/>
-    <property name="basedir" value="D:\NAGP\eclips\seleniumAutomation"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
-    <property name="line.separator" value="&#10;"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\sounakroy\AppData\Local\Temp\surefire1787463610348647712\surefirebooter-20230802101847747_3.jar"/>
-    <property name="user.script" value=""/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="17.0.8+9-LTS-211"/>
-    <property name="user.name" value="sounakroy"/>
-    <property name="path.separator" value=";"/>
-    <property name="os.version" value="10.0"/>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\sounakroy\.m2\repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\SOUNAK~1\AppData\Local\Temp\"/>
-    <property name="java.version" value="17.0.8"/>
-    <property name="user.dir" value="D:\NAGP\eclips\seleniumAutomation"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/sounakroy/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin/server;C:/Users/sounakroy/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Java\jdk-17;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Users\sounakroy\AppData\Local\Android\Sdk\platform-tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools\bin;C:\oracle\ODAC112021_x64\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\sounakroy\AppData\Roaming\npm\node_modules;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Users\sounakroy\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\sounakroy\AppData\Local\Programs\Python\Python310\;C:\Users\sounakroy\AppData\Local\Microsoft\WindowsApps;C:\Users\sounakroy\.dotnet\tools;C:\Users\sounakroy\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\apache-maven-3.8.4\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.302-1\bin;C:\Users\sounakroy\AppData\Local\Android\Sdk\platform-tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools;;C:\Windows\System32;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17.0.8"/>
+    <property name="native.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2023-07-18"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="61.0"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="BagsLinkTest" classname="com.magento.test.SaleTest" time="4.812">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:18:49.074 [main] ExtentReporterNG - Setting Extent Report Info.........
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.inializeDriver()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.openUrl()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.close()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.inializeDriver()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.openUrl()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.close()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.inializeDriver()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.openUrl()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.close()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.inializeDriver()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.openUrl()]. Static configuration methods can cause  unexpected behavior.
-[Configuration] [WARN] Detected a static method [com.magento.test.BaseTest.close()]. Static configuration methods can cause  unexpected behavior.
-[INFO ] 2023-08-02 10:18:49.518 [main] FileRead - Read File Method called
-[INFO ] 2023-08-02 10:18:49.531 [main] DeleteDirectory - Delete Directory Method Called
-[INFO ] 2023-08-02 10:18:49.532 [main] FileMove - Move File Method called
-[INFO ] 2023-08-02 10:18:49.549 [main] DeleteDirectory - Delete Directory Method Called
-[INFO ] 2023-08-02 10:18:49.594 [main] BaseTest - Initialize the Driver..........
-[DEBUG] 2023-08-02 10:18:51.236 [main] InternalLoggerFactory - Using Log4J2 as the default logging framework
-[DEBUG] 2023-08-02 10:18:51.255 [main] ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
-[DEBUG] 2023-08-02 10:18:51.255 [main] ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
-[DEBUG] 2023-08-02 10:18:51.265 [main] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@46044faa
-[DEBUG] 2023-08-02 10:18:51.301 [main] PlatformDependent0 - -Dio.netty.noUnsafe: false
-[DEBUG] 2023-08-02 10:18:51.301 [main] PlatformDependent0 - Java version: 17
-[DEBUG] 2023-08-02 10:18:51.303 [main] PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
-[DEBUG] 2023-08-02 10:18:51.305 [main] PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
-[DEBUG] 2023-08-02 10:18:51.305 [main] PlatformDependent0 - sun.misc.Unsafe.storeFence: available
-[DEBUG] 2023-08-02 10:18:51.306 [main] PlatformDependent0 - java.nio.Buffer.address: available
-[DEBUG] 2023-08-02 10:18:51.308 [main] PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
-[DEBUG] 2023-08-02 10:18:51.309 [main] PlatformDependent0 - java.nio.Bits.unaligned: available, true
-[DEBUG] 2023-08-02 10:18:51.311 [main] PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @26275bef
-[DEBUG] 2023-08-02 10:18:51.314 [main] PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[DEBUG] 2023-08-02 10:18:51.314 [main] PlatformDependent - sun.misc.Unsafe: available
-[DEBUG] 2023-08-02 10:18:51.315 [main] PlatformDependent - maxDirectMemory: 4229955584 bytes (maybe)
-[DEBUG] 2023-08-02 10:18:51.316 [main] PlatformDependent - -Dio.netty.tmpdir: C:\Users\SOUNAK~1\AppData\Local\Temp (java.io.tmpdir)
-[DEBUG] 2023-08-02 10:18:51.316 [main] PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[DEBUG] 2023-08-02 10:18:51.318 [main] PlatformDependent - Platform: Windows
-[DEBUG] 2023-08-02 10:18:51.319 [main] PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
-[DEBUG] 2023-08-02 10:18:51.320 [main] PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[DEBUG] 2023-08-02 10:18:51.322 [main] CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
-[DEBUG] 2023-08-02 10:18:51.323 [main] PlatformDependent - -Dio.netty.noPreferDirect: false
-[DEBUG] 2023-08-02 10:18:51.338 [main] PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
-[DEBUG] 2023-08-02 10:18:51.371 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[DEBUG] 2023-08-02 10:18:51.372 [main] InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[DEBUG] 2023-08-02 10:18:51.701 [main] JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
-[DEBUG] 2023-08-02 10:18:51.702 [main] JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
-[DEBUG] 2023-08-02 10:18:51.729 [main] GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
-[DEBUG] 2023-08-02 10:18:51.757 [main] MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 16
-[DEBUG] 2023-08-02 10:18:51.777 [main] NioEventLoop - -Dio.netty.noKeySetOptimization: false
-[DEBUG] 2023-08-02 10:18:51.778 [main] NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
-[DEBUG] 2023-08-02 10:18:51.950 [main] PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 16
-[DEBUG] 2023-08-02 10:18:51.950 [main] PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 16
-[DEBUG] 2023-08-02 10:18:51.950 [main] PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
-[DEBUG] 2023-08-02 10:18:51.950 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
-[DEBUG] 2023-08-02 10:18:51.951 [main] PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
-[DEBUG] 2023-08-02 10:18:51.951 [main] PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
-[DEBUG] 2023-08-02 10:18:51.951 [main] PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
-[DEBUG] 2023-08-02 10:18:51.951 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[DEBUG] 2023-08-02 10:18:51.952 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
-[DEBUG] 2023-08-02 10:18:51.952 [main] PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[DEBUG] 2023-08-02 10:18:51.952 [main] PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
-[DEBUG] 2023-08-02 10:18:51.953 [main] PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[DEBUG] 2023-08-02 10:18:51.975 [main] ByteBufUtil - -Dio.netty.allocator.type: pooled
-[DEBUG] 2023-08-02 10:18:51.975 [main] ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
-[DEBUG] 2023-08-02 10:18:51.976 [main] ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[DEBUG] 2023-08-02 10:18:52.751 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.processId: 26880 (auto-detected)
-[DEBUG] 2023-08-02 10:18:52.758 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv4Stack: false
-[DEBUG] 2023-08-02 10:18:52.758 [Forwarding newSession on session null to remote] NetUtil - -Djava.net.preferIPv6Addresses: false
-[DEBUG] 2023-08-02 10:18:52.788 [Forwarding newSession on session null to remote] NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.2.3)
-[DEBUG] 2023-08-02 10:18:52.789 [Forwarding newSession on session null to remote] NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[DEBUG] 2023-08-02 10:18:52.860 [Forwarding newSession on session null to remote] DefaultChannelId - -Dio.netty.machineId: c0:3c:59:ff:fe:03:e1:f7 (auto-detected)
-[DEBUG] 2023-08-02 10:18:52.964 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
-[DEBUG] 2023-08-02 10:18:52.965 [AsyncHttpClient-1-2] AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
-[DEBUG] 2023-08-02 10:18:52.966 [AsyncHttpClient-1-2] ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@1ce2e54d
-[DEBUG] 2023-08-02 10:18:53.031 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
-[DEBUG] 2023-08-02 10:18:53.031 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.ratio: 8
-[DEBUG] 2023-08-02 10:18:53.031 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.chunkSize: 32
-[DEBUG] 2023-08-02 10:18:53.032 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.blocking: false
-[DEBUG] 2023-08-02 10:18:53.032 [AsyncHttpClient-1-2] Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
-[DEBUG] 2023-08-02 10:18:55.090 [AsyncHttpClient-1-2] Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
-[DEBUG] 2023-08-02 10:18:55.597 [main] ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x53fd872c8ce58be6
-[INFO ] 2023-08-02 10:18:55.971 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:19:06.942 [main] SaleTest - Bag Link Test case
-[INFO ] 2023-08-02 10:19:06.975 [main] SalePage - click on Sale Button
-[INFO ] 2023-08-02 10:19:10.057 [main] SalePage - click on Bag Link
-]]></system-out>
-    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 45433
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:18:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="FitnessEquipmentLinkTest" classname="com.magento.test.SaleTest" time="5.095">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:19:11.753 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:19:12.166 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:19:14.357 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:19:23.189 [main] SaleTest - Fitness-Equipment Link Test case
-[INFO ] 2023-08-02 10:19:23.190 [main] SalePage - click on Sale Button
-[INFO ] 2023-08-02 10:19:26.449 [main] SalePage - click on Fitness-Equipment Link
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 24891
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:19:14 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="BagButtonTest" classname="com.magento.test.GearTest" time="6.107">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:19:28.284 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:19:28.633 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:19:30.669 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:19:40.464 [main] GearTest - Bag Button Test case
-[INFO ] 2023-08-02 10:19:40.468 [main] GearPage - click on Gear Button
-[INFO ] 2023-08-02 10:19:43.945 [main] GearPage - mouse over on Gear Button
-[INFO ] 2023-08-02 10:19:44.138 [main] GearPage - click on Bag Button from drop-down
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 27060
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:19:30 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="FitnessEquipmentButtonTest" classname="com.magento.test.GearTest" time="5.278">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:19:46.572 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:19:46.993 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:19:49.168 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:19:58.541 [main] GearTest - Fitness-Equipment Button Test case
-[INFO ] 2023-08-02 10:19:58.541 [main] GearPage - click on Gear Button
-[INFO ] 2023-08-02 10:20:01.612 [main] GearPage - mouse over on Gear Button
-[INFO ] 2023-08-02 10:20:01.826 [main] GearPage - click on Fitness-Equipment Button from drop-down
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 42804
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:19:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="WatchesButtonTest" classname="com.magento.test.GearTest" time="4.043">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:20:03.820 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:20:04.213 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:20:06.472 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:20:15.566 [main] GearTest - Watches Button Test case
-[INFO ] 2023-08-02 10:20:15.567 [main] GearPage - click on Gear Button
-[INFO ] 2023-08-02 10:20:17.137 [main] GearPage - mouse over on Gear Button
-[INFO ] 2023-08-02 10:20:17.600 [main] GearPage - click on Watches Button from drop-down
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 14781
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:20:06 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="invalidSearchTest[5yre](1)" classname="com.magento.test.SearchTest" time="2.282">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:20:19.610 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:20:20.274 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:20:23.240 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:20:31.197 [main] SearchTest - Invalid Searh Test case
-[INFO ] 2023-08-02 10:20:31.202 [main] SearchPage - click on search bar
-[INFO ] 2023-08-02 10:20:31.514 [main] SearchPage - enter details on search
-[INFO ] 2023-08-02 10:20:31.685 [main] SearchPage - click on enter button from keyboard
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 17350
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:20:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="invalidSearchTest[Jaccket](2)" classname="com.magento.test.SearchTest" time="1.917">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:20:33.480 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:20:33.867 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:20:35.748 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:20:44.539 [main] SearchTest - Invalid Searh Test case
-[INFO ] 2023-08-02 10:20:44.542 [main] SearchPage - click on search bar
-[INFO ] 2023-08-02 10:20:44.690 [main] SearchPage - enter details on search
-[INFO ] 2023-08-02 10:20:44.854 [main] SearchPage - click on enter button from keyboard
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 2239
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:20:35 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="validSearchTest[jacket](1)" classname="com.magento.test.SearchTest" time="4.228">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:20:46.456 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:20:46.812 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:20:48.625 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:20:56.362 [main] SearchTest - Valid Search Test case
-[INFO ] 2023-08-02 10:20:56.363 [main] SearchPage - click on search bar
-[INFO ] 2023-08-02 10:20:56.470 [main] SearchPage - enter details on search
-[INFO ] 2023-08-02 10:20:56.619 [main] SearchPage - click on enter button from keyboard
-[INFO ] 2023-08-02 10:21:00.418 [main] SearchPage - check item visibility
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 38161
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:20:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="validSearchTest[Bag](2)" classname="com.magento.test.SearchTest" time="6.467">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:21:00.590 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:21:01.403 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:21:04.371 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:21:13.880 [main] SearchTest - Valid Search Test case
-[INFO ] 2023-08-02 10:21:13.881 [main] SearchPage - click on search bar
-[INFO ] 2023-08-02 10:21:14.060 [main] SearchPage - enter details on search
-[INFO ] 2023-08-02 10:21:14.279 [main] SearchPage - click on enter button from keyboard
-[INFO ] 2023-08-02 10:21:18.692 [main] SearchPage - check item visibility
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 16612
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:21:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
-  <testcase name="WomenButtonTest" classname="com.magento.test.HomeTest" time="3.291">
-    <system-out><![CDATA[[INFO ] 2023-08-02 10:21:20.348 [main] BaseTest - Closing the Driver..........
-[INFO ] 2023-08-02 10:21:21.830 [main] BaseTest - Initialize the Driver..........
-[INFO ] 2023-08-02 10:21:26.166 [main] BaseTest - Opening the URL..........
-[INFO ] 2023-08-02 10:21:35.118 [main] HomeTest - Women Button Test case
-[INFO ] 2023-08-02 10:21:35.121 [main] HomePage - click on Women Button
-]]></system-out>
-    <system-err><![CDATA[Starting Microsoft Edge WebDriver 115.0.1901.188 (b51b39339c49c4dc7c61b77f8b61420ca0ab7b68) on port 39848
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 02, 2023 10:21:25 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-]]></system-err>
-  </testcase>
+  <testcase classname="com.magento.test.GearTest" name="BagButtonTest" time="5.961"/>
+  <testcase classname="com.magento.test.GearTest" name="FitnessEquipmentButtonTest" time="5.326"/>
+  <testcase classname="com.magento.test.GearTest" name="WatchesButtonTest" time="5.605"/>
+  <testcase classname="com.magento.test.HomeTest" name="WomenButtonTest" time="3.47"/>
+  <testcase classname="com.magento.test.SaleTest" name="BagsLinkTest" time="6.543"/>
+  <testcase classname="com.magento.test.SaleTest" name="FitnessEquipmentLinkTest" time="5.268"/>
+  <testcase classname="com.magento.test.SearchTest" name="invalidSearchTest" time="1.89"/>
+  <testcase classname="com.magento.test.SearchTest" name="invalidSearchTest" time="2.499"/>
+  <testcase classname="com.magento.test.SearchTest" name="validSearchTest" time="3.624"/>
+  <testcase classname="com.magento.test.SearchTest" name="validSearchTest" time="3.04"/>
 </testsuite>
