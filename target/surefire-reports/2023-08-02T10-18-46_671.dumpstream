@@ -1,4 +1,5 @@
-# Created at 2023-07-26T11:50:06.490
+# Created at 2023-08-02T10:18:47.786
 Boot Manifest-JAR contains absolute paths in classpath 'D:\NAGP\eclips\seleniumAutomation\target\test-classes'
 Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
 
