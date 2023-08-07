@@ -11,21 +11,24 @@ public class FileRead {
 
 	static Logger log = LogManager.getLogger(FileRead.class);
 
-	public static String readFile(String path)
+	public static String readFile(String path) throws IOException
 	{
 		log.info("Read File Method called");
-
+		BufferedReader reader = null;
 		String value=null;
 		try
 		{
 			File file=new File(path);
-			BufferedReader reader=new BufferedReader(new FileReader(file));
+			reader=new BufferedReader(new FileReader(file));
 			value=reader.readLine();
-			reader.close();
 		}
 		catch(IOException e)
 		{
 			e.printStackTrace();
+		}
+		finally
+		{
+			reader.close();
 		}
 		return value;
 	}
