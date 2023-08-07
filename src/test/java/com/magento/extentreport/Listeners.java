@@ -66,13 +66,24 @@ public class Listeners extends BaseTest implements ITestListener {
 		File file=new File("Current test results");
 		File rename=new File("Current test results"+date);
 		file.renameTo(rename);
-		FileWrite.writeFile(date, "./Resource/value.txt");
+		try {
+			FileWrite.writeFile(date, "./Resource/value.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 	}
 
 	public void onStart(ITestContext context) {
 		// TODO Auto-generated method stub
-		String name=FileRead.readFile("./Resource/value.txt");
+		String name = null;
+		try {
+			name = FileRead.readFile("./Resource/value.txt");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
 		
 		String archiveFilePath = "./Archived test results";
