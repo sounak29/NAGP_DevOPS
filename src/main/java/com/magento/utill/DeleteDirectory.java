@@ -6,10 +6,11 @@ import org.apache.logging.log4j.Logger;
 
 
 public class DeleteDirectory {
+	static Logger log;
 	   private DeleteDirectory() {
+		 log = LogManager.getLogger(DeleteDirectory.class);
 	    }
 	    
-	 static Logger log = LogManager.getLogger(DeleteDirectory.class);
 
 	public static void deleteDirectory(File file)
 	{
@@ -26,11 +27,11 @@ public class DeleteDirectory {
 		}
 		if(bool)
 		{
-			System.out.print("sucess");
+			log.info("Sucess");
 		}
 		else
 		{
-			System.out.print("fail");
+			log.info("Failed");
 
 		}
 		
