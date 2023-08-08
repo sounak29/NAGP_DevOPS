@@ -11,7 +11,7 @@ public class FileRead {
 
 	static Logger log = LogManager.getLogger(FileRead.class);
 
-	public static String readFile(String path) throws IOException
+	public static String readFile(String path) 
 	{
 		log.info("Read File Method called");
 		BufferedReader reader = null;
@@ -28,7 +28,12 @@ public class FileRead {
 		}
 		finally
 		{
-			reader.close();
+			try {
+				reader.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return value;
 	}
