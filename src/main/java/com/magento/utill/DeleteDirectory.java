@@ -14,14 +14,13 @@ public class DeleteDirectory {
 	public static void deleteDirectory(File file)
 	{
 		log.info("Delete Directory Method Called");
-		boolean bool=false;
 		for(File subfile : file.listFiles())
 		{
 			if(subfile.isDirectory())
 			{
 				deleteDirectory(subfile);
 			}
-			 bool=subfile.delete();
+			 subfile.delete();
 		}
 		
 	}

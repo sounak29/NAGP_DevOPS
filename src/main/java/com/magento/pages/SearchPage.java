@@ -1,6 +1,5 @@
 package com.magento.pages;
 
-import java.time.Duration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -10,7 +9,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SearchPage {
 	
@@ -40,9 +38,6 @@ public class SearchPage {
 	public void enterSearchText(String searchText)
 	{
 		log.info("enter details on search");
-
-		WebDriverWait wait= new WebDriverWait(driver,Duration.ofSeconds(40));
-
 		search.sendKeys(searchText);
 	}
 	
