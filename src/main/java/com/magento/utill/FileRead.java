@@ -7,12 +7,19 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import lombok.NoArgsConstructor;
+
 public class FileRead {
+	
+	   private FileRead() {
+	    }
+	    
 
 	static Logger log = LogManager.getLogger(FileRead.class);
 
 	public static String readFile(String path) 
 	{
+	 
 		log.info("Read File Method called");
 		BufferedReader reader = null;
 		String value=null;
@@ -32,11 +39,9 @@ public class FileRead {
 			try {
 				reader.close();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			catch ( NullPointerException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			}

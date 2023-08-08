@@ -6,6 +6,9 @@ import org.apache.logging.log4j.Logger;
 
 
 public class DeleteDirectory {
+	   private DeleteDirectory() {
+	    }
+	    
 	 static Logger log = LogManager.getLogger(DeleteDirectory.class);
 
 	public static void deleteDirectory(File file)

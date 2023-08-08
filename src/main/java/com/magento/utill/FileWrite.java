@@ -6,6 +6,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class FileWrite {
+	   private FileWrite() {
+	    }
+	    
 	static Logger log = LogManager.getLogger(FileWrite.class);
 
 	public static void writeFile(String value, String path) 
@@ -27,11 +30,9 @@ public class FileWrite {
 				try {
 					writer.close();
 				} catch (IOException e) {
-				// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 				catch ( NullPointerException e) {
-				// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 		
