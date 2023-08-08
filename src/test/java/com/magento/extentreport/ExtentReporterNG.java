@@ -1,9 +1,6 @@
 package com.magento.extentreport;
 
-import java.io.File;
-import java.sql.Date;
-import java.text.SimpleDateFormat;
-import java.util.Formatter;
+
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
