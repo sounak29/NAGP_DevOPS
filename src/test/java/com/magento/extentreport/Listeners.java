@@ -66,12 +66,7 @@ public class Listeners extends BaseTest implements ITestListener {
 		File file=new File("Current test results");
 		File rename=new File("Current test results"+date);
 		file.renameTo(rename);
-		try {
-			FileWrite.writeFile(date, "./Resource/value.txt");
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		FileWrite.writeFile(date, "./Resource/value.txt");
 		
 	}
 

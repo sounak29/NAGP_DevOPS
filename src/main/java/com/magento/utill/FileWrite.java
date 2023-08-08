@@ -8,7 +8,7 @@ import org.apache.logging.log4j.Logger;
 public class FileWrite {
 	static Logger log = LogManager.getLogger(FileWrite.class);
 
-	public static void writeFile(String value, String path) throws IOException
+	public static void writeFile(String value, String path) 
 	{
 		log.info("Write File Method called");
 		FileWriter writer=null;
@@ -23,7 +23,16 @@ public class FileWrite {
 		}
 		finally
 		{
-			writer.close();
+			try {
+				writer.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			catch ( NullPointerException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 }
