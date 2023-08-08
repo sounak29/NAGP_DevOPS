@@ -38,7 +38,7 @@ public class FileRead {
 			try {
 				reader.close();
 			} catch (IOException e) {
-				e.printStackTrace();
+				log.info(e);
 			}
 			catch ( NullPointerException e) {
 				e.printStackTrace();
