@@ -23,16 +23,20 @@ public class FileWrite {
 		}
 		finally
 		{
-			try {
-				writer.close();
-			} catch (IOException e) {
+			if(writer != null) {
+				try {
+					writer.close();
+				} catch (IOException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			catch ( NullPointerException e) {
+					e.printStackTrace();
+				}
+				catch ( NullPointerException e) {
 				// TODO Auto-generated catch block
-				e.printStackTrace();
+					e.printStackTrace();
+				}
+		
 			}
 		}
+		
 	}
 }
