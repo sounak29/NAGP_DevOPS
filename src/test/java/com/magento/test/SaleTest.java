@@ -6,7 +6,7 @@ import org.testng.AssertJUnit;
 import com.magento.pages.SalePage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-public class SaleTest extends BaseTest {
+public class SaleTest extends Base {
 	
 	 Logger Salelog = LogManager.getLogger(SaleTest.class);
 

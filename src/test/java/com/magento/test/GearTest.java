@@ -5,11 +5,10 @@ import org.testng.AssertJUnit;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
 import com.magento.pages.GearPage;
 
 
-public class GearTest extends BaseTest {
+public class GearTest extends Base {
 	 Logger GearLog = LogManager.getLogger(GearTest.class);
 
 	

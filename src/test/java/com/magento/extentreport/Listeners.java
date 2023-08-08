@@ -4,25 +4,20 @@ package com.magento.extentreport;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-
-import com.magento.test.BaseTest;
+import com.magento.test.Base;
 import com.magento.utill.DeleteDirectory;
 import com.magento.utill.FileMove;
 import com.magento.utill.FileRead;
 import com.magento.utill.FileWrite;
 
 
-public class Listeners extends BaseTest implements ITestListener {
+public class Listeners extends Base implements ITestListener {
 	
 	ExtentReports extent=ExtentReporterNG.extentReportergenerator();
 	ExtentTest test;

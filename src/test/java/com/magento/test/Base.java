@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -20,11 +19,11 @@ import org.testng.annotations.BeforeMethod;
 
 
 
-public class BaseTest {
+public class Base {
 	
 	public static final ThreadLocal<WebDriver> driver=new ThreadLocal<WebDriver>();
 	
-	 static Logger log = LogManager.getLogger(BaseTest.class);
+	 static Logger log = LogManager.getLogger(Base.class);
 	
 	static File congigFile =new File("./Resource/config.properties");
 	static FileInputStream configFis=null;

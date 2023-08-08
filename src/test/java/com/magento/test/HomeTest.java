@@ -1,16 +1,12 @@
 package com.magento.test;
 
 import org.testng.annotations.Test;
-
 import org.testng.AssertJUnit;
-
-
 import com.magento.pages.HomePage;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class HomeTest extends BaseTest {
+public class HomeTest extends Base {
 	
 	 Logger Homelog = LogManager.getLogger(HomeTest.class);
 

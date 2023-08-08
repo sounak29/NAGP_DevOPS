@@ -7,7 +7,7 @@ import com.magento.pages.SearchPage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class SearchTest extends BaseTest {
+public class SearchTest extends Base {
 	
 	 Logger Searchlog = LogManager.getLogger(SearchTest.class);
 

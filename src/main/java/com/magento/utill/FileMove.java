@@ -22,7 +22,6 @@ public class FileMove {
 		try {
 			FileUtils.copyDirectory(souurecFile, destinationFile);
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
+			log.info(e1);
 		}	}
 }
