@@ -1,8 +1,4 @@
-com\magento\pages\SearchPage.class
-com\magento\utill\FileRead.class
-com\magento\pages\GearPage.class
-com\magento\utill\FileWrite.class
 com\magento\pages\HomePage.class
+com\magento\pages\SearchPage.class
 com\magento\pages\SalePage.class
-com\magento\utill\DeleteDirectory.class
-com\magento\utill\FileMove.class
+com\magento\pages\GearPage.class

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="1" name="TestSuite" time="45.772" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="TestSuite" time="44.354" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="17.0.8+9-LTS-211"/>
@@ -25,7 +25,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\NAGP\NAGP Selenium Assignment\seleniumAutomation\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf14562160074112100421.tmp"/>
+    <property name="classworlds.conf" value="D:\NAGP\NAGP Selenium Assignment\seleniumAutomation\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf9323465025311970940.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/sounakroy/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin/server;C:/Users/sounakroy/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.1.v20211116-1657/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\nodejs\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Java\jdk-17;C:\Program Files (x86)\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Users\sounakroy\AppData\Local\Android\Sdk\platform-tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools\bin;C:\oracle\ODAC112021_x64\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\sounakroy\AppData\Roaming\npm\node_modules;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\apache-maven-3.8.4\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Users\sounakroy\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\sounakroy\AppData\Local\Programs\Python\Python310\;C:\Users\sounakroy\AppData\Local\Microsoft\WindowsApps;C:\Users\sounakroy\.dotnet\tools;C:\Users\sounakroy\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\apache-maven-3.8.4\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.302-1\bin;C:\Users\sounakroy\AppData\Local\Android\Sdk\platform-tools;C:\Users\sounakroy\AppData\Local\Android\Sdk\tools;;C:\Windows\System32;;."/>
     <property name="jdk.debug" value="release"/>
@@ -57,67 +57,14 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.magento.test.GearTest" name="BagButtonTest" time="5.601"/>
-  <testcase classname="com.magento.test.GearTest" name="FitnessEquipmentButtonTest" time="5.47">
-    <failure message="element not interactable
-  (Session info: MicrosoftEdge=115.0.1901.200)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [e5c981975c0b6f52f6b95049eae86f66, clickElement {id=A911348DCCF97CCCC8EFF485689AF70B_element_5}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:49556}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49556/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (e5c981975c0b6f52f6b95049eae86f66)] -&gt; xpath: //span[normalize-space()=&apos;Fitness Equipment&apos;]]
-Session ID: e5c981975c0b6f52f6b95049eae86f66" type="org.openqa.selenium.ElementNotInteractableException">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: MicrosoftEdge=115.0.1901.200)
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [e5c981975c0b6f52f6b95049eae86f66, clickElement {id=A911348DCCF97CCCC8EFF485689AF70B_element_5}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:49556}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49556/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (e5c981975c0b6f52f6b95049eae86f66)] -&gt; xpath: //span[normalize-space()=&apos;Fitness Equipment&apos;]]
-Session ID: e5c981975c0b6f52f6b95049eae86f66
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at com.magento.pages.GearPage.clickOnFitnessEquipment(GearPage.java:53)
-	at com.magento.test.GearTest.FitnessEquipmentButtonTest(GearTest.java:38)
-</failure>
-    <system-out>[INFO ] 2023-08-10 00:20:02.254 [main] Base - Closing the Driver..........
-[INFO ] 2023-08-10 00:20:02.612 [main] Base - Initialize the Driver..........
-[INFO ] 2023-08-10 00:20:04.615 [main] Base - Opening the URL..........
-[INFO ] 2023-08-10 00:20:22.434 [main] GearTest - Fitness-Equipment Button Test case
-[INFO ] 2023-08-10 00:20:22.435 [main] GearPage - click on Gear Button
-[INFO ] 2023-08-10 00:20:24.884 [main] GearPage - mouse over on Gear Button
-[INFO ] 2023-08-10 00:20:27.771 [main] GearPage - click on Fitness-Equipment Button from drop-down
-</system-out>
-    <system-err>Starting Microsoft Edge WebDriver 115.0.1901.200 (64b0164e9f6a43a530acd52f6525ddd6fe990817) on port 23602
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-Aug 10, 2023 12:20:04 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 115, so returning the closest version found: 111
-</system-err>
-  </testcase>
-  <testcase classname="com.magento.test.GearTest" name="WatchesButtonTest" time="5.423"/>
-  <testcase classname="com.magento.test.HomeTest" name="WomenButtonTest" time="3.624"/>
-  <testcase classname="com.magento.test.SaleTest" name="BagsLinkTest" time="3.812"/>
-  <testcase classname="com.magento.test.SaleTest" name="FitnessEquipmentLinkTest" time="4.242"/>
-  <testcase classname="com.magento.test.SearchTest" name="invalidSearchTest" time="2.627"/>
-  <testcase classname="com.magento.test.SearchTest" name="invalidSearchTest" time="2.346"/>
-  <testcase classname="com.magento.test.SearchTest" name="validSearchTest" time="4.975"/>
-  <testcase classname="com.magento.test.SearchTest" name="validSearchTest" time="7.652"/>
+  <testcase classname="com.magento.test.GearTest" name="BagButtonTest" time="3.585"/>
+  <testcase classname="com.magento.test.GearTest" name="FitnessEquipmentButtonTest" time="7.201"/>
+  <testcase classname="com.magento.test.GearTest" name="WatchesButtonTest" time="5.224"/>
+  <testcase classname="com.magento.test.HomeTest" name="WomenButtonTest" time="3.371"/>
+  <testcase classname="com.magento.test.SaleTest" name="BagsLinkTest" time="6.525"/>
+  <testcase classname="com.magento.test.SaleTest" name="FitnessEquipmentLinkTest" time="5.895"/>
+  <testcase classname="com.magento.test.SearchTest" name="invalidSearchTest" time="2.857"/>
+  <testcase classname="com.magento.test.SearchTest" name="invalidSearchTest" time="2.837"/>
+  <testcase classname="com.magento.test.SearchTest" name="validSearchTest" time="4.32"/>
+  <testcase classname="com.magento.test.SearchTest" name="validSearchTest" time="2.539"/>
 </testsuite>
