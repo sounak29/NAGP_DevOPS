@@ -4,5 +4,4 @@ com\magento\test\SearchTest.class
 com\magento\test\HomeTest.class
 com\magento\extentreport\ExtentReporterNG.class
 com\magento\extentreport\Listeners.class
-com\magento\test\BaseTest.class
 com\magento\test\GearTest.class

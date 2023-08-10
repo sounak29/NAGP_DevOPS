@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
-              <span class="suite-name border-passed">Command line suite</span>
+              <span class="suite-name border-failed">Command line suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.GearTest" class="method navigator-link" hash-for-method="FitnessEquipmentButtonTest">FitnessEquipmentButtonTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,11 +127,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.GearTest" class="method navigator-link" hash-for-method="FitnessEquipmentButtonTest">FitnessEquipmentButtonTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.SaleTest" class="method navigator-link" hash-for-method="FitnessEquipmentLinkTest">FitnessEquipmentLinkTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -133,22 +142,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.SearchTest" class="method navigator-link" hash-for-method="invalidSearchTest(5yre)">invalidSearchTest(5yre)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.SearchTest" class="method navigator-link" hash-for-method="invalidSearchTest(Jaccket)">invalidSearchTest(Jaccket)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.SearchTest" class="method navigator-link" hash-for-method="validSearchTest(jacket)">validSearchTest(jacket)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.SearchTest" class="method navigator-link" hash-for-method="invalidSearchTest(5yre)">invalidSearchTest(5yre)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.SearchTest" class="method navigator-link" hash-for-method="validSearchTest(Bag)">validSearchTest(Bag)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="com.magento.test.SearchTest" class="method navigator-link" hash-for-method="validSearchTest(jacket)">validSearchTest(jacket)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Command_line_suite -->
@@ -163,23 +172,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
-          <div class="suite-Command_line_suite-class-passed">
+          <div class="suite-Command_line_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.magento.test.HomeTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.magento.test.GearTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="WomenButtonTest">
-                  </a> <!-- WomenButtonTest -->
-                  <span class="method-name">WomenButtonTest</span>
+                  <a name="FitnessEquipmentButtonTest">
+                  </a> <!-- FitnessEquipmentButtonTest -->
+                  <span class="method-name">FitnessEquipmentButtonTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: MicrosoftEdge=115.0.1901.200)
+Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [e5c981975c0b6f52f6b95049eae86f66, clickElement {id=A911348DCCF97CCCC8EFF485689AF70B_element_5}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.200, ms:edgeOptions: {debuggerAddress: localhost:49556}, msedge: {msedgedriverVersion: 115.0.1901.200 (64b0164e9f6..., userDataDir: C:\Windows\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49556/devtoo..., se:cdpVersion: 115.0.1901.200, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: msedge on WINDOWS (e5c981975c0b6f52f6b95049eae86f66)] -&gt; xpath: //span[normalize-space()=&apos;Fitness Equipment&apos;]]
+Session ID: e5c981975c0b6f52f6b95049eae86f66
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.magento.pages.GearPage.clickOnFitnessEquipment(GearPage.java:53)
+	at com.magento.test.GearTest.FitnessEquipmentButtonTest(GearTest.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 42 stack frames
+</div> <!-- stack-trace -->
                   <em>
-(Verify Women Button on Home Page)                  </em>
+(Verify Fitness-Equipment Button on Gear Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Command_line_suite-class-passed -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
           <div class="suite-Command_line_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -214,6 +246,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="invalidSearchTest(Jaccket)">
+                  </a> <!-- invalidSearchTest(Jaccket) -->
+                  <span class="method-name">invalidSearchTest</span>
+                  <span class="parameters">(Jaccket)</span>
+                  <em>
+(Verify Search functionality for Invalid Search)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="invalidSearchTest(5yre)">
                   </a> <!-- invalidSearchTest(5yre) -->
                   <span class="method-name">invalidSearchTest</span>
@@ -224,12 +266,12 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="invalidSearchTest(Jaccket)">
-                  </a> <!-- invalidSearchTest(Jaccket) -->
-                  <span class="method-name">invalidSearchTest</span>
-                  <span class="parameters">(Jaccket)</span>
+                  <a name="validSearchTest(Bag)">
+                  </a> <!-- validSearchTest(Bag) -->
+                  <span class="method-name">validSearchTest</span>
+                  <span class="parameters">(Bag)</span>
                   <em>
-(Verify Search functionality for Invalid Search)                  </em>
+(Verify Search functionality for Valid Search)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -242,14 +284,21 @@
 (Verify Search functionality for Valid Search)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.magento.test.HomeTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validSearchTest(Bag)">
-                  </a> <!-- validSearchTest(Bag) -->
-                  <span class="method-name">validSearchTest</span>
-                  <span class="parameters">(Bag)</span>
+                  <a name="WomenButtonTest">
+                  </a> <!-- WomenButtonTest -->
+                  <span class="method-name">WomenButtonTest</span>
                   <em>
-(Verify Search functionality for Valid Search)                  </em>
+(Verify Women Button on Home Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,15 +316,6 @@
                   <span class="method-name">BagButtonTest</span>
                   <em>
 (Verify Bag Button on Gear Page)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="FitnessEquipmentButtonTest">
-                  </a> <!-- FitnessEquipmentButtonTest -->
-                  <span class="method-name">FitnessEquipmentButtonTest</span>
-                  <em>
-(Verify Fitness-Equipment Button on Gear Page)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -300,7 +340,6 @@
 &lt;suite name=&quot;Command line suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.magento.test.BaseTest&quot;/&gt;
       &lt;class name=&quot;com.magento.test.GearTest&quot;/&gt;
       &lt;class name=&quot;com.magento.test.HomeTest&quot;/&gt;
       &lt;class name=&quot;com.magento.test.SaleTest&quot;/&gt;
@@ -318,7 +357,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Command line test (5 classes)</span>
+                <span class="test-name">Command line test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -434,50 +473,50 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'BagsLinkTest')
-data.setCell(0, 2, 'com.magento.test.SaleTest')
-data.setCell(0, 3, 6544);
+data.setCell(0, 1, 'validSearchTest')
+data.setCell(0, 2, 'com.magento.test.SearchTest')
+data.setCell(0, 3, 7652);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'BagButtonTest')
 data.setCell(1, 2, 'com.magento.test.GearTest')
-data.setCell(1, 3, 5960);
+data.setCell(1, 3, 5597);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'WatchesButtonTest')
+data.setCell(2, 1, 'FitnessEquipmentButtonTest')
 data.setCell(2, 2, 'com.magento.test.GearTest')
-data.setCell(2, 3, 5606);
+data.setCell(2, 3, 5460);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'FitnessEquipmentButtonTest')
+data.setCell(3, 1, 'WatchesButtonTest')
 data.setCell(3, 2, 'com.magento.test.GearTest')
-data.setCell(3, 3, 5326);
+data.setCell(3, 3, 5422);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'FitnessEquipmentLinkTest')
-data.setCell(4, 2, 'com.magento.test.SaleTest')
-data.setCell(4, 3, 5268);
+data.setCell(4, 1, 'validSearchTest')
+data.setCell(4, 2, 'com.magento.test.SearchTest')
+data.setCell(4, 3, 4974);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'validSearchTest')
-data.setCell(5, 2, 'com.magento.test.SearchTest')
-data.setCell(5, 3, 3624);
+data.setCell(5, 1, 'FitnessEquipmentLinkTest')
+data.setCell(5, 2, 'com.magento.test.SaleTest')
+data.setCell(5, 3, 4243);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'WomenButtonTest')
-data.setCell(6, 2, 'com.magento.test.HomeTest')
-data.setCell(6, 3, 3471);
+data.setCell(6, 1, 'BagsLinkTest')
+data.setCell(6, 2, 'com.magento.test.SaleTest')
+data.setCell(6, 3, 3813);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validSearchTest')
-data.setCell(7, 2, 'com.magento.test.SearchTest')
-data.setCell(7, 3, 3040);
+data.setCell(7, 1, 'WomenButtonTest')
+data.setCell(7, 2, 'com.magento.test.HomeTest')
+data.setCell(7, 3, 3625);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'invalidSearchTest')
 data.setCell(8, 2, 'com.magento.test.SearchTest')
-data.setCell(8, 3, 2500);
+data.setCell(8, 3, 2628);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'invalidSearchTest')
 data.setCell(9, 2, 'com.magento.test.SearchTest')
-data.setCell(9, 3, 1889);
+data.setCell(9, 3, 2346);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 43 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -510,168 +549,170 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">3641 ms</span>
+                <span class="method-start">9714 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">BagButtonTest</span>
-                <span class="method-start">21861 ms</span>
+                <span class="method-start">20497 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">27824 ms</span>
+                <span class="method-start">26097 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">28361 ms</span>
+                <span class="method-start">26454 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">30313 ms</span>
+                <span class="method-start">28457 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">FitnessEquipmentButtonTest</span>
-                <span class="method-start">39721 ms</span>
+                <span class="method-start">46276 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">45048 ms</span>
+                <span class="method-start">51744 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">45451 ms</span>
+                <span class="method-start">52011 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">47452 ms</span>
+                <span class="method-start">54004 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">WatchesButtonTest</span>
-                <span class="method-start">56255 ms</span>
+                <span class="method-start">64407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">61862 ms</span>
+                <span class="method-start">69830 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.magento.test.HomeTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">62318 ms</span>
+                <span class="method-start">70154 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">64779 ms</span>
+                <span class="method-start">72504 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">WomenButtonTest</span>
-                <span class="method-start">73311 ms</span>
+                <span class="method-start">81037 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">76784 ms</span>
+                <span class="method-start">84663 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.magento.test.SaleTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">77302 ms</span>
+                <span class="method-start">85150 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">79411 ms</span>
+                <span class="method-start">87630 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">BagsLinkTest</span>
-                <span class="method-start">88163 ms</span>
+                <span class="method-start">96700 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">94708 ms</span>
+                <span class="method-start">100514 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">95335 ms</span>
+                <span class="method-start">100847 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">97499 ms</span>
+                <span class="method-start">103101 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">FitnessEquipmentLinkTest</span>
-                <span class="method-start">105858 ms</span>
+                <span class="method-start">108725 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">111127 ms</span>
+                <span class="method-start">112970 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.magento.test.SearchTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">111602 ms</span>
+                <span class="method-start">113417 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">113552 ms</span>
+                <span class="method-start">115238 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidSearchTest(5yre)</span>
-                <span class="method-start">123118 ms</span>
+                <span class="method-start">124846 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">125009 ms</span>
+                <span class="method-start">127475 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">125444 ms</span>
+                <span class="method-start">127798 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">127400 ms</span>
+                <span class="method-start">130095 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">invalidSearchTest(Jaccket)</span>
-                <span class="method-start">137674 ms</span>
+                <span class="method-start">138068 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">140175 ms</span>
+                <span class="method-start">140415 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">140614 ms</span>
+                <span class="method-start">141069 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">142830 ms</span>
+                <span class="method-start">143970 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validSearchTest(jacket)</span>
-                <span class="method-start">154142 ms</span>
+                <span class="method-start">154058 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">157767 ms</span>
+                <span class="method-start">159035 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">inializeDriver</span>
-                <span class="method-start">158186 ms</span>
+                <span class="method-start">160741 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">openUrl</span>
-                <span class="method-start">160635 ms</span>
+                <span class="method-start">165971 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validSearchTest(Bag)</span>
-                <span class="method-start">170463 ms</span>
+                <span class="method-start">178338 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">close</span>
-                <span class="method-start">173504 ms</span>
+                <span class="method-start">185991 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
