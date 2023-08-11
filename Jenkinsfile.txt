@@ -26,6 +26,30 @@ pipeline {
                 bat 'mvn test'
             }
         }
+		stage('Sonarqube') {
+			environment {
+				scannerHome = tool 'Sonar_Testing'
+			}
+			steps {
+				withSonarQubeEnv('sonarqube') {
+					bat "${scannerHome}/bin/sonar-scanner"
+				}
+				timeout(time: 10, unit: 'MINUTES') {
+					waitForQualityGate abortPipeline: true
+				}
+			}
+		}
+		stage("Quality Gate"){
+			timeout(time: 1, unit: 'HOURS') 
+			{
+				waitForQualityGate abortPipeline: true
+				def qg= waitForQualityGate()
+				if (qg.status!= 'OK'){
+					error "Pipeline aborted due to quality gate failure: ${qg.status}"
+				}
+			}         
+			echo 'Quality Gate Passed' 
+		}
 		stage('Publish to Artifactory'){
 			steps{
 				rtMavenDeployer(
