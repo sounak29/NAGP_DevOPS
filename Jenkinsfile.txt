@@ -28,7 +28,7 @@ pipeline {
         }
 		stage('Sonarqube Analysis') {
             environment {
-				scannerHome = tool 'Sonar_Testing'
+				scannerHome = tool 'sonar_scanner'
 		    }
 			steps {
 				withSonarQubeEnv('ALM Prod Sonar') {
