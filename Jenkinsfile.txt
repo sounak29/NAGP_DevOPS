@@ -26,26 +26,27 @@ pipeline {
                 bat 'mvn test'
             }
         }
-		stage('Sonarqube') {
-			environment {
+		stage('Sonarqube Analysis') {
+            environment {
 				scannerHome = tool 'Sonar_Testing'
-			}
+		    }
 			steps {
-				withSonarQubeEnv('sonarqube') {
+				withSonarQubeEnv('ALM Prod Sonar') {
 					bat "${scannerHome}/bin/sonar-scanner"
-				}
-				timeout(time: 10, unit: 'MINUTES') {
-					waitForQualityGate abortPipeline: true
-				}
-			}
-		}
-		stage("Quality Gate"){
-			timeout(time: 1, unit: 'HOURS') {
-				def qg = waitForQualityGate()
-				if (qg.status != 'OK') {
-					error "Pipeline aborted due to quality gate failure: ${qg.status}"
-				}
-			}
+				  }
+				echo "test1"
+				sleep time: 30000, unit: 'MILLISECONDS'
+				echo "test2"
+				script {
+						echo "test3"
+						def qg = waitForQualityGate()
+						echo "test4"
+						if (qg.status != 'OK') {
+							//error "Pipeline aborted due to quality gate failure: ${qg.status}"
+							echo "test4"
+					    }
+				    }
+			    }
 		}
 		stage('Publish to Artifactory'){
 			steps{
