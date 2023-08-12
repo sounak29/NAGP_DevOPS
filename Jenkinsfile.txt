@@ -28,7 +28,6 @@ pipeline {
         }
 		stage('Sonarqube Analysis') {
             environment {
-				echo "sonar "
 				scannerHome = tool 'Sonar_Test'
 		    }
 			steps {
