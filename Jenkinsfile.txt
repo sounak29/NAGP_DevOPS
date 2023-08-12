@@ -28,10 +28,11 @@ pipeline {
         }
 		stage('Sonarqube Analysis') {
             environment {
-				scannerHome = tool 'SonarQube Scanner 5.0.0.2966'
+				echo "sonar "
 		    }
 			steps {
 				withSonarQubeEnv('Sonar_Testing') {
+					echo "inside this"
 					bat 'mvn sonar:sonar'
 				  }
 				echo "test1"
