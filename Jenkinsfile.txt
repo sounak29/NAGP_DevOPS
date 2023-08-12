@@ -28,11 +28,11 @@ pipeline {
         }
 		stage('Sonarqube Analysis') {
             environment {
-				scannerHome = tool 'SonarQube Scanner'
+				scannerHome = tool 'SonarQube Scanner 5.0.0.2966'
 		    }
 			steps {
-				withSonarQubeEnv('ALM Prod Sonar') {
-					bat "${scannerHome}/bin/sonar-scanner"
+				withSonarQubeEnv('Sonar_Testing') {
+					bat 'mvn sonar:sonar'
 				  }
 				echo "test1"
 				sleep time: 30000, unit: 'MILLISECONDS'
